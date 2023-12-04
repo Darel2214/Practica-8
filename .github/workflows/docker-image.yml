@@ -34,11 +34,11 @@ jobs:
       env:
         NEW_VERSION: ${{ steps.version.outputs.version }}
       run: |
-        docker build -t ddarel2214/practicagit:$NEW_VERSION .
-        docker build -t darel2214/practicagit:latest .
+        docker build -t darel741/practicagit:$NEW_VERSION .
+        docker build -t darel741/practicagit:latest .
     - name: Push Docker Image
       env:
         NEW_VERSION: ${{ steps.version.outputs.version }}
       run: |
-        docker push darel2214/practicagit:$NEW_VERSION
-        docker push darel2214/practicagit:latest
+        docker push darel741/practicagit:$NEW_VERSION
+        docker push darel741/practicagit:latest
